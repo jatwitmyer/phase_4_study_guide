@@ -43,6 +43,11 @@ For this study guide, I'll be defining a "many" class and a "join" class, which 
 
 This will create a new collection with all of the tests of your routes you will need.
 
+To be able to send fetch requests, get your server running with the following command:
+```console
+python server/app.py
+```
+
 ## 5. Edit app.py
 ### Get All
 ```python
