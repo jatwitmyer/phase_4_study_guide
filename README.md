@@ -103,12 +103,12 @@ def first_many_by_id(id):
     try:
       for attr in form_data:
         setattr(first_many, attr, form_data.get(attr))
-        db.session.commit()
-        response = first_many.to_dict(rules = ('-joins', ))
-        return make_response(response, 200)
-      except ValueError:
-        response = {"errors": ["validation errors"]}
-        return make_response(response, 403)
+      db.session.commit()
+      response = first_many.to_dict(rules = ('-joins', ))
+      return make_response(response, 200)
+    except ValueError:
+      response = {"errors": ["validation errors"]}
+      return make_response(response, 403)
 ```
 ### Delete
 ```python
