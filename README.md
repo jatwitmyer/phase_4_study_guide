@@ -28,7 +28,10 @@ flask db upgrade
 ## 3. Editing models.py for a many to many relationship
 For this study guide, I'll be defining a "many" class and a "join" class, which links the two "many" classes together.
 
-### Many Class Example
+### Many to Many Classes
+Navigate to models.py to see examples of how to set up the classes.
+
+Here are the steps to go through while creating models:
 - properties
 - db.relationship
 - association_proxy
