@@ -39,4 +39,4 @@ class Join(db.Model, SerializerMixin):
             raise ValueError('Property must be an integer between 0 and 23, representing the hour of the day.')
     
     def __repr__(self):
-        return f'<Signup {self.id}>'
+        return f'<Join {self.id}: {self.property}>'
